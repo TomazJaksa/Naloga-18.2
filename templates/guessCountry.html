@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Guess the country by picture.
+{% endblock title%}
+
+{% block content %}
+    <h1>Welcome to the Guess the Country quiz!</h1>
+    <p>In which country is the city on the picture?</p>
+    <div class="guessCountryContainer">
+
+        <img id="cityImg" src="{{ img }}"/>
+
+        <form action="/checkAnswer" method="POST">
+            <select name="list_of_countries">
+                <option value="('Slovenia',)">Slovenia</option>
+                <option value="('Czech Republic',)">Czech Republic</option>
+                <option value="('France',)">France</option>
+            </select><br/>
+            <button id="submitButton" type="submit">Submit answer!</button>
+        </form>
+
+    </div>
+{% endblock content %}

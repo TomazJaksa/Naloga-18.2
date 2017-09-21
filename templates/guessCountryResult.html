@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title%}Quiz results{%endblock title%}
+
+{%block content%}
+	<h1>{{result}}</h1>
+	{% if img == "right"%}
+		<img class="win" src="../assets/images/confetti4.png">
+		<img class="win champ" src="../assets/images/ribbon.png">
+		<img class="win" src="../assets/images/confetti2.png">
+	{% elif img == "wrong"%}
+		<img class="lose" src="../assets/images/wrong.png">
+	{%endif%}
+	<br>
+	<a id="back" href="/guessCountry">Back to quiz!</a>
+{%endblock content%}

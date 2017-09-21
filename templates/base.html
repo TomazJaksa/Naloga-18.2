@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/globe.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+            <a href="/guessCountry">Guess the Country!</a>
+        </nav>
+
+        <main>
+            {% block content %}
+
+            {% endblock content %} 
+        </main>
+
+        <footer>
+            © 2017 The Globe Inc.
+        </footer>
+    </div>
+</body>
+</html>

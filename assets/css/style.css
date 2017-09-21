@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+* {
+    margin-top: 1em;
+}
+
+body {
+    /*Box-model*/
+    width: 100%;
+        
+    /*Color*/
+    background-color: white;
+       
+    /*Tekst*/
+    font-family: 'Lobster', cursive;  
+}
+
+h1, h3 {  
+    /*Color*/
+    color: maroon;  
+}
+
+
+.container {   
+    /*Box-model*/
+    width: 100%;
+    margin: 0 auto;
+      
+    /*Tekst*/
+    text-align: center;
+}
+
+article {       
+    /*Box-model*/
+    width : 80%;
+    margin: 2em auto;
+    box-shadow: 1px 5px 8px silver;
+    padding: 2em;
+    border-radius: 5px;
+        
+    /*Color*/
+    background-color: beige;
+       
+    /*Tekst*/
+    text-align: justify;
+}
+
+article h1 {
+    /*Tekst*/
+    text-align: center;
+    font-size: 3em;
+}
+
+.countries {
+    /*Positioning*/
+    display:block;
+
+    /*Box-model*/
+    border-radius: 5px;
+    margin: 2em auto;
+}
+
+.text {
+    /*Positioning*/
+    display:inline-block;
+        
+    /*Box-model*/
+    width: 60%;
+    padding: 1em;
+}
+
+#author {
+    /*Positioning*/
+    display:inline-block;
+        
+    /*Box-model*/
+    width: 30%;
+    border-radius: 5%;
+    margin-top: 5em; 
+}
+
+.blogP {      
+    /*Tekst*/
+    text-align: justify;
+    line-height: 2em;
+} 
+.guessCountryContainer{   
+    /*Box-model*/
+    width: 40%;
+    margin: 1em auto;
+    box-shadow: 1px 5px 8px gray;
+    padding:1em;
+        
+    /*Color*/
+    background-color: beige;
+}
+
+#cityImg {
+    /*Box-model*/
+    width: 25em;
+    height: auto;
+    border-radius: 5px;
+}
+
+a {    
+    /*Box-model*/
+    margin-right: 1em;
+        
+    /*Color*/
+    color: black;
+       
+    /*Tekst*/
+    text-decoration: none;
+}
+
+a:hover {  
+    /*Color*/
+    color: maroon;
+}
+
+#back {
+    /*Color*/
+    color: maroon;
+       
+    /*Tekst*/
+    font-size: 30px;
+}
+
+#back:hover {
+    /*Tekst*/
+    text-decoration: underline;
+}
+form {
+    /*Color*/
+    background-color: beige;
+}
+
+select, input{
+    /*Box-model*/
+    padding: 0.5em;
+    width: 80%;
+    outline:none;
+
+    /*Tekst*/
+    font-family: 'Lobster', cursive; 
+}
+
+
+#submitButton {
+    /*Box-model*/
+    padding: 1em;
+    border-radius: 5px;
+    border:none;
+
+        
+    /*Color*/
+    color: white;
+    background-color: maroon;
+       
+    /*Tekst*/
+    font-family: 'Lobster', cursive;
+       
+    /*Ostalo*/
+    transition: 0.5s;
+}
+
+#submitButton:hover {      
+    /*Color*/
+    background-color:black;   
+}
+
+#submitButton:active {
+    /*Positioning*/
+    position:relative;
+    top:5px;
+
+    /*Ostalo*/
+    transition:0.1s;
+}
+
+footer {   
+    /*Box-model*/
+    margin-top: 3em;
+}
+
+.win,.lose {
+    /*Positioning*/
+    display:inline-block;
+        
+    /*Box-model*/
+    width:15%;
+    height:auto;  
+}
+
+.champ,.lose {
+    /*Box-model*/
+    width: 30%;
+}
+
+.cont {
+    /*Positioning*/
+    position: relative;
+        
+    /*Box-model*/
+    width: 60%;
+    height: auto;
+    margin: 2em auto;
+}
+
+.projectPics {
+    /*Box-model*/
+    width: 100%;  
+}
+
+.text-cont {
+    /*Positioning*/
+    position: absolute;
+    top:0;
+    left:0;
+        
+    /*Box-model*/
+    width:0;
+    height:100%;
+        
+    /*Color*/
+    background-color: maroon;
+ 
+    /*Ostalo*/
+    opacity: 0;
+    transition: 0.5s;
+    transition-timing-function: ease;
+    }
+
+.picP{
+    /*Positioning*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    /*Color*/
+    color: white;
+   
+    /*Ostalo*/
+    transform: translate(-50%,-50%);
+}
+
+.cont:hover .text-cont {
+    /*Box-model*/
+    width: 100%;
+
+    /*Ostalo*/     
+    opacity: 0.95;
+ }
+
+ #pen,.blogImg {
+    /*Positioning*/
+    display: block;
+        
+    /*Box-model*/
+    margin: 0 auto;
+ }
+
+ .blogImg {
+    /*Box-model*/
+    border-radius: 5px;
+    box-shadow: 1px 5px 8px silver;
+ }
+
+#contactInfo {
+    /*Positioning*/
+    display: inline-block;
+    position: relative;
+    bottom: 5em;
+        
+    /*Box-model*/
+    width: 55%;
+
+    /*Tekst*/
+    text-align: center; 
+}
+
+#emailForm {
+    /*Positioning*/
+    display: inline-block;
+        
+    /*Box-model*/
+    width: 40%;
+}

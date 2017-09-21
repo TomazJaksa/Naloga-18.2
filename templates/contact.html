@@ -1,0 +1,58 @@
+{% extends "base.html"%}
+
+{% block title %}
+    Projects
+{% endblock title %}
+
+{% block content%}
+  <article>
+  	
+    
+      <img  class="blogImg" src="../assets/images/contact.gif" alt="contact" width="200" height="150">
+      <h1>Contact</h1>
+
+      <div id="contactInfo">
+      <p class="blogP">
+        <h3>EMAIL</h3>
+        info@wanderer.com
+
+        <h3>TELEPHONE</h3>
+        +30 6977 447 033
+
+        <h3>SKYPE</h3>
+        theWandererAlly
+
+        <h3>ADDRESS</h3>
+        Combadi Ltd.,<br>
+        1. Kings Avenue,<br>
+        London,<br>
+        N21 3NA,<br>
+        England,<br>
+
+        Company No. 07814000<br>
+
+      </p>
+    </div>
+    <div id="emailForm">
+      <form action="/checkMessage" method="post">
+        Name:<br>
+        <input type="text" name="name"><br><br>
+
+
+
+        Email:<br>
+        <input type="email" name="mail"><br><br>
+
+
+
+        Message:<br>
+        <textarea name="message" placeholder="Enter message here..." rows="10" cols="50"></textarea><br><br>
+
+
+
+        <button id="submitButton" type="submit">Submit Message!</button>
+
+      </form>
+    </div>
+  </article>
+{% endblock content%}
